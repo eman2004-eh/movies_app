@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:movies_app/services/api_service.dart';
 import 'package:movies_app/screens/movie_details_screen/movie_details_screen.dart';
-import 'package:movies_app/screens/profile_screen/update_profile_screen.dart'; // Import the UpdateProfileScreen
+import 'package:movies_app/screens/profile_screen/update_profile_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -16,7 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
   List<dynamic> _searchResults = [];
   final TextEditingController _searchController = TextEditingController();
   String _selectedGenre = 'All';
-  List<dynamic> _watchlist = []; // Placeholder for watchlist
+  final List<dynamic> _watchlist = [];
 
   @override
   void initState() {
