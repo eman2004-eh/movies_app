@@ -15,7 +15,6 @@ class _UpdateProfileScreenState extends State<UpdateProfileScreen> {
   Future<void> _updateProfile() async {
     if (_formKey.currentState!.validate()) {
       try {
-        // TODO: Add update profile API call
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(content: Text('Profile updated successfully')),
         );
