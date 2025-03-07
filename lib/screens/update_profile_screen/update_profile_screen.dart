@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'reset_password_screen.dart'; // Import the ResetPasswordScreen
 
 class UpdateProfileScreen extends StatefulWidget {
   const UpdateProfileScreen({super.key});
@@ -60,10 +61,11 @@ class _UpdateProfileScreenState extends State<UpdateProfileScreen> {
   }
 
   void _resetPassword() {
-    // TODO: Implement reset password logic
-    ScaffoldMessenger.of(
+    // Navigate to the ResetPasswordScreen
+    Navigator.push(
       context,
-    ).showSnackBar(const SnackBar(content: Text('Reset password link sent!')));
+      MaterialPageRoute(builder: (context) => const ResetPasswordScreen()),
+    );
   }
 
   void _deleteAccount() {
